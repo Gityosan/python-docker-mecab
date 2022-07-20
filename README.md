@@ -11,6 +11,9 @@
 `git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git`でmecab-ipadic-neologdを引っ張ってくる
 
 
+辞書のルートパス確認
+`mecab-config --dicdir`
+
 コンテナからローカルへのコピー(基本は上書き)
 
 `docker ps`でコンテナID/コンテナ名を調べた後、
