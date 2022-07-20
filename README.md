@@ -11,7 +11,7 @@
 `git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git`でmecab-ipadic-neologdを引っ張ってくる
 
 
-コンテナからローカルへのコピー
+コンテナからローカルへのコピー(基本は上書き)
 
 `docker ps`でコンテナID/コンテナ名を調べた後、
 `docker cp <docker id>:/home/jovyan/mecab-python3.ipynb $PWD/work`
