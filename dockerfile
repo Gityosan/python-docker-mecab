@@ -1,14 +1,20 @@
-FROM python:3.8
+FROM jupyter/base-notebook
 
-WORKDIR /opt/app
+USER root
+RUN apt-get update && apt-get install -y \
+  make \
+  curl \
+  file \
+  git \
+  libmecab-dev \
+  mecab \
+  mecab-ipadic-utf8
 
-RUN apt update \
-  && apt upgrade -y \
-  && apt install -y mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file sudo gcc g++
+COPY requirements.txt $PWD
 
-RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
-  && mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -n -y \
-  && rm -rf mecab-ipadic-neologd
-
-COPY src/requirements.txt .
-RUN pip install -r requirements.txt
+RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && \
+  mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y && \
+  echo dicdir = `mecab-config --dicdir`"/mecab-ipadic-neologd">/etc/mecabrc && \
+  sudo cp /etc/mecabrc /usr/local/etc && \
+  cd .. && \
+  pip install -r requirements.txt
