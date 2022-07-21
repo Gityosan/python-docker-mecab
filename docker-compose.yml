@@ -9,4 +9,4 @@ services:
     ports:
       - "889:8888"
     volumes:
-      - ./work:/home/jovyan/work
+      - ./work:/home/jovyan
