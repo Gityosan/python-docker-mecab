@@ -1,0 +1,60 @@
+0 verbose cli [
+0 verbose cli   '/opt/conda/bin/node',
+0 verbose cli   '/opt/conda/bin/npm',
+0 verbose cli   'pack',
+0 verbose cli   'jupyterlab_dark_solar_theme'
+0 verbose cli ]
+1 info using npm@8.5.5
+2 info using node@v17.9.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 16ms
+5 timing config:load:file:/opt/conda/lib/node_modules/npm/npmrc Completed in 9ms
+6 timing config:load:builtin Completed in 11ms
+7 timing config:load:cli Completed in 8ms
+8 timing config:load:env Completed in 2ms
+9 timing config:load:file:/tmp/tmpvm5iglbn/.npmrc Completed in 2ms
+10 timing config:load:project Completed in 60ms
+11 timing config:load:file:/home/jovyan/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 4ms
+13 timing config:load:file:/opt/conda/etc/npmrc Completed in 1ms
+14 timing config:load:global Completed in 3ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 7ms
+17 timing config:load:setEnvs Completed in 8ms
+18 timing config:load Completed in 130ms
+19 timing npm:load:configload Completed in 132ms
+20 timing npm:load:setTitle Completed in 2ms
+21 timing config:load:flatten Completed in 19ms
+22 timing npm:load:display Completed in 25ms
+23 verbose logfile /home/jovyan/.npm/_logs/2022-07-21T05_48_11_114Z-debug-0.log
+24 timing npm:load:logFile Completed in 56ms
+25 timing npm:load:timers Completed in 1ms
+26 timing npm:load:configScope Completed in 0ms
+27 timing npm:load Completed in 225ms
+28 http fetch GET 200 https://registry.npmjs.org/jupyterlab_dark_solar_theme 1062ms (cache revalidated)
+29 http fetch GET 200 https://registry.npmjs.org/jupyterlab_dark_solar_theme 39ms (cache hit)
+30 notice
+31 notice 📦  jupyterlab_dark_solar_theme@1.0.3
+32 notice === Tarball Contents ===
+33 notice 1.5kB  LICENSE            
+33 notice 449B   README.md          
+33 notice 191B   lib/index.d.ts     
+33 notice 661B   lib/index.js       
+33 notice 1.7kB  package.json       
+33 notice 25.9kB style/index.css    
+33 notice 72.5kB style/urls.css     
+33 notice 15.4kB style/variables.css
+34 notice === Tarball Details ===
+35 notice name:          jupyterlab_dark_solar_theme             
+35 notice version:       1.0.3                                   
+35 notice filename:      jupyterlab_dark_solar_theme-1.0.3.tgz   
+35 notice package size:  26.3 kB                                 
+35 notice unpacked size: 118.4 kB                                
+35 notice shasum:        c8909a85e44bc66339f1b193b8df5df49e3fc616
+35 notice integrity:     sha512-2erDLqUZasbqd[...]/kYMwyo4qkmwA==
+35 notice total files:   8                                       
+36 notice
+37 timing command:pack Completed in 1295ms
+38 verbose exit 0
+39 timing npm Completed in 2319ms
+40 info ok
