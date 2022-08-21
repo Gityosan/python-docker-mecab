@@ -1,0 +1,9 @@
+mecab-python3
+unidic-lite
+pandas
+numpy
+jupyterlab-language-pack-ja-JP
+jupyterlab_code_formatter
+black
+isort
+lckr-jupyterlab-variableinspector
